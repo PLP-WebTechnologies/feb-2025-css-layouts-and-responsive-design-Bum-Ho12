@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Assignment</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Responsive Design</div>
+                <button class="menu-toggle">☰</button>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Modern CSS Layouts</h1>
+                <p>Learn how to create responsive designs using Flexbox and CSS Grid</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Flexbox Layout</h3>
+                    <p>Flexbox is designed for one-dimensional layouts, making it perfect for creating navigation bars, aligning items, and distributing space along a single axis.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>CSS Grid</h3>
+                    <p>CSS Grid is a powerful two-dimensional layout system that handles both rows and columns, making complex layouts much easier to implement.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Responsive Design</h3>
+                    <p>Create layouts that adapt to different screen sizes and devices using media queries to provide the best user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <h2>Understanding Modern CSS Layouts</h2>
+                    <p>Modern web design requires layouts that are flexible, responsive, and adaptable to various screen sizes. Gone are the days of fixed-width designs and table-based layouts. Today, we use powerful CSS tools like Flexbox and Grid to create dynamic layouts.</p>
+                    <p>Flexbox excels at arranging items in a single dimension (either in a row or column), making it perfect for components like navigation menus, card layouts, and centering content. It gives you control over the alignment, direction, order, and size of items.</p>
+                    <p>CSS Grid, on the other hand, is a two-dimensional system that can handle both rows and columns simultaneously. This makes it ideal for page layouts and complex interface designs where you need precise control over placement in both directions.</p>
+                    <p>By combining these technologies with media queries, we can create truly responsive designs that look great on devices of all sizes, from small mobile phones to large desktop monitors.</p>
+                </div>
+                <div class="sidebar">
+                    <h3>Related Resources</h3>
+                    <ul>
+                        <li><a href="#">Flexbox Guide</a></li>
+                        <li><a href="#">CSS Grid Tutorial</a></li>
+                        <li><a href="#">Media Query Examples</a></li>
+                        <li><a href="#">Responsive Typography</a></li>
+                        <li><a href="#">Mobile-First Design</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 ResponsiveDesign. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#">Twitter</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to toggle mobile menu
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
